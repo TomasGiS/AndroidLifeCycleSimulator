@@ -3,7 +3,7 @@ package com.tomasgis.android.basics.test;
 import com.tomasgis.android.basics.jvm.AndroidOS;
 
 /**
- * Basic Android Android life cycle emulation
+ * Basic Android life cycle emulation
  * @author TomasGiS
  *
  */
