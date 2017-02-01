@@ -58,6 +58,34 @@ public class AndroidOS {
 		}
 		
 	}
+	
+	public static void stopMainActivity()
+	{
+		Activity activity = applicationsMap.get(mainActivityName);
+		if (activity != null)
+		{
+			activity.stop();
+		}
+		else
+		{
+			System.out.println("Illegal state: "+mainActivityName);
+		}
+	}
+	
+	public static void destroyActivity()
+	{
+		Activity activity = applicationsMap.get(mainActivityName);
+		if (activity != null)
+		{
+			applicationsMap.remove(mainActivityName);
+			activity=null;
+			System.gc();
+		}
+		else
+		{
+			System.out.println("Illegal state: "+mainActivityName);
+		}
+	}
 
 	
 	

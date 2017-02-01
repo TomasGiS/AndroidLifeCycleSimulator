@@ -15,6 +15,11 @@ public class Main {
 		
 		AndroidOS.launchMainActivity();
 		AndroidOS.pauseMainActivity();
+		//Activity cannot be stopped because is already stopped
+		AndroidOS.stopMainActivity();
+		AndroidOS.destroyActivity();
+		//Activity cannot be stopped because is already destroyed
+		//AndroidOS.pauseMainActivity();
 	}
 
 }

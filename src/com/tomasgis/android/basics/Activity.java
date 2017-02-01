@@ -137,6 +137,7 @@ public abstract class Activity implements IActivityLifeCycle{
 		{
 			case RUNNING: {onPause();} break;
 			case PAUSED:{onStop();}break;
+			case STOPPED:{System.out.println("Activity already stopped");}
 			case DESTROYED:{this.activityState=ActivityState.ZOMBIE;}break;
 			case ZOMBIE:{System.out.println("Illegal state: Do nothing");} break;
 			default:{System.out.println("Illegal state: Do nothing");} break;
